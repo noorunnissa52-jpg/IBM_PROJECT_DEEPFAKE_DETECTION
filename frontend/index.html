@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepfake Detector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel">
+        <h1>Deepfake / Real Image Detector</h1>
+        <p>Upload an image to estimate whether it is REAL or FAKE.</p>
+
+        <label class="upload-box" for="imageInput">
+          <input id="imageInput" type="file" accept="image/*" />
+          <span id="uploadText">Choose image</span>
+        </label>
+
+        <div class="preview-wrap">
+          <img id="preview" alt="Selected preview" hidden />
+        </div>
+
+        <button id="predictBtn" class="primary-btn" type="button">Predict</button>
+
+        <div id="resultBox" class="result-box hidden">
+          <h2>Prediction</h2>
+          <div id="label" class="label"></div>
+          <div id="confidence" class="confidence"></div>
+          <div id="probabilityList" class="probability-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

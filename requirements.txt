@@ -1,0 +1,8 @@
+torch>=2.0
+torchvision>=0.15
+numpy
+pillow
+scikit-learn
+matplotlib
+tqdm
+gradio>=4.0   # only needed for app.py (optional web demo)
